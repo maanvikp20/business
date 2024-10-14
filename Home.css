@@ -51,7 +51,7 @@ h1{
     align-items: center;
 }
 
-.sidebar{
+/* .sidebar{
     display: flex;
     position: sticky;
     top: 0;
@@ -60,4 +60,4 @@ h1{
     float: left;
     width: 50px;
     padding-right: 50px;
-}
+} */

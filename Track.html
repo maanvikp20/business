@@ -3,12 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tracks</title>
-    <link rel="stylesheet" href="./track.css">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="track.css">
+
 </head>
 <body>
-    <h1>Tracks</h1>
-    <a href="./Home.html">Home</a>
+    <a href="Home.html">Home</a>
+    <form action="#">
+        <h1>Payment Form</h1>
+        <p>Required Fields are Followed by <strong><abbr title='Required'>*</abbr></strong></p>
 
+        <section>
+            <h2>Content information</h2>
+            <fieldset>
+                <legend>Title</legend>
+                <il>
+                    <li>
+                        <label for="title_1">
+                        <input type="radio" id="title_1" name="title" value="A">
+                        Upper
+                    </label>
+                </li>
+                <li>
+                    <label for="title_2">
+                    <input type="radio" id="title_2" name="title" value="K">
+                    Middle
+                </label>
+                </li>
+                <li>
+                    <label for="title_3">
+                    <input type="radio" id="title_3" name="title" value="Q">
+                    lower
+                </label>
+                </li>
+                </il>
+            </fieldset>
+
+            <p>
+                <lable for="name"><span>Name: </span>
+                    <strong><abbr title="required">*</abbr></strong>
+                </lable>
+                <input type="text" id="name" name="username">
+            </p>
+            <p>
+                <lable for="mail"><span>Email: </span>
+                    <strong><abbr title="required">*</abbr></strong>
+                </lable>
+                <input type="email" id="mail" name="usermail">
+            </p>
+            <p>
+                <lable for="pwd"><span>Pasword: </span>
+                    <strong><abbr title="required">*</abbr></strong>
+                </lable>
+                <input type="password" id="name" name="password">
+            </p>
+        </section>
+        <section>
+            <h2>Payment information</h2>
+            <p>
+                <lable for="card">
+                    <span>Card Type:</span>
+                </lable>
+                <select id="card" name="usercard">
+                    <option value="visa">Visa</option>
+                    <option value="mc">MC</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="amex">Amex</option>
+                    <option value="capone">Captital One</option>
+                </select>
+            </p>
+            <p>
+                <lable for="number">
+                    <span>Card Number:</span>
+                    <strong><abbr title="required">*</abbr></strong>
+                </lable>
+                <input type="tel" name="cardnumber" id="number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+            </p>
+            <p>
+                <lable for="date">
+                    <span>Experation Date:</span>
+                    <strong><abbr title="required">*</abbr></strong>
+                    <em>formatted as mm/dd/yy</em>
+                </lable>
+                <input type="date" name="experation" id="date">
+            </p>
+        </section>
+        <section>
+            <p>
+                <button type="submit">Validate the Payment</button>
+            </p>
+        </section>
+    </form>
+
+    
 </body>
 </html>
