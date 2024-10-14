@@ -50,3 +50,14 @@ h1{
     background-color: grey;
     align-items: center;
 }
+
+.sidebar{
+    display: flex;
+    position: sticky;
+    top: 0;
+    background-color: black;
+    color:aliceblue;
+    float: left;
+    width: 50px;
+    padding-right: 50px;
+}
