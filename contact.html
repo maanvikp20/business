@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payment Form</title>
-    <link rel="stylesheet" href="track.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RPM Repairs</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <a href="Home.html">Home</a>
+  <header>
+    <h1>RPM Repairs</h1>
+  </header>
+  <nav class="navbar">
+    <div class="nav-items">
+      <a class="navitem" href="./index.html">Home</a>
+      <a class="navitem" href="/services.html">Services</a>
+      <a class="navitem" href="/gallery.html">Gallery</a>
+      <a class="navitem" href="/contact.html">Contact</a>
+    </div>
+    <div class="search-bar">
+      <form action="/search" method="GET">
+        <input type="search" name="query" placeholder="Search..." required>
+        <button type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
     <form action="#">
         <h1>Payment Form</h1>
         <p>Required Fields are Followed by <strong><abbr title='Required'>*</abbr></strong></p>
