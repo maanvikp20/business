@@ -87,7 +87,7 @@ button:hover {
 .services-main{
   display: block;
   position: relative;
-  background-image: url("./images/360_F_435892680_6r3bwoH0puBT3jRjNdQWxOnCCG2GhSne.jpg");
+  background-image: url("./images/garage.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
@@ -97,6 +97,7 @@ button:hover {
 .service-display{
   display: block;
   padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .service1{
@@ -237,3 +238,29 @@ footer {
 
 /* eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee*/
 
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  padding: 20px;
+}
+
+.gallery-item {
+  background-color: #f4f4f4;
+  border: 2px solid #ddd;
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.gallery-item:hover {
+  background-color: #e0e0e0;
+}
