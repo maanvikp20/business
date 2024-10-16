@@ -1,0 +1,15 @@
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.names{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: x-large;
+    margin: 0;
+    width: fit-content;
+}
