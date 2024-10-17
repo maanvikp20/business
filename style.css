@@ -29,6 +29,7 @@ nav {
   align-items: center;
   padding: 20px;
   background-color: #333;
+  z-index: 1000;
 }
 
 .nav-items {
@@ -73,7 +74,7 @@ button:hover {
   background-color: #45a049;
 }
 
-main {
+.index-main{
   display: block;
   text-align: center;
   background-image: url("https://img1.wsimg.com/isteam/stock/w6VWk3m/:/cr=t:5.35%25,l:0.82%25,w:93.9%25,h:70.42%25/rs=w:1240,h:620,cg:true,m");
@@ -81,6 +82,82 @@ main {
   background-repeat: no-repeat;
   color: white;
   padding: 20px;
+}
+
+.services-main{
+  display: block;
+  position: relative;
+  background-image: url("./images/garage.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  font-size: x-large;
+}
+
+.service-display{
+  display: block;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.service1{
+  display: flex;
+  justify-content: end;
+  background-color: rgba(0, 0, 0, 0.7); 
+  border-radius: 8px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  width: 40%;
+  padding: 5px;
+}
+
+.service2{
+  display: flex;
+  justify-content: end;
+  background-color: rgba(0, 0, 0, 0.7); 
+  border-radius: 8px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  width: 40%;
+  padding: 5px;
+}
+
+.service3{
+  display: flex;
+  justify-content: end;
+  background-color: rgba(0, 0, 0, 0.7); 
+  border-radius: 8px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  width: 40%;
+  padding: 5px;
+}
+
+.service4{
+  display: flex;
+  justify-content: end;
+  background-color: rgba(0, 0, 0, 0.7); 
+  border-radius: 8px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  width: 40%;
+  padding: 5px;
+}
+
+.service5{
+  display: flex;
+  justify-content: end;
+  background-color: rgba(0, 0, 0, 0.7); 
+  border-radius: 8px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  width: 40%;
+  padding: 5px;
+}
+
+.service6{
+  display: flex;
+  justify-content: end;
+  background-color: rgba(0, 0, 0, 0.7); 
+  border-radius: 8px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  width: 40%;
+  padding: 5px;
 }
 
 .logo {
@@ -161,3 +238,29 @@ footer {
 
 /* eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee*/
 
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  padding: 20px;
+}
+
+.gallery-item {
+  background-color: #f4f4f4;
+  border: 2px solid #ddd;
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.gallery-item:hover {
+  background-color: #e0e0e0;
+}

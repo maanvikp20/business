@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>RPM Repairs</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="contact.css">
 </head>
 <body>
   <header>
@@ -30,44 +31,34 @@
 
         <section>
             <h2>Content information</h2>
-            <fieldset>
+            <fieldset class="content">
                 <legend>Title</legend>
-                <il>
-                    <li>
-                        <label for="title_1">
-                        <input type="radio" id="title_1" name="title" value="A">
-                        Upper
-                    </label>
-                </li>
-                <li>
-                    <label for="title_2">
-                    <input type="radio" id="title_2" name="title" value="K">
-                    Middle
-                </label>
-                </li>
-                <li>
-                    <label for="title_3">
-                    <input type="radio" id="title_3" name="title" value="Q">
-                    lower
-                </label>
-                </li>
-                </il>
-            </fieldset>
-
+            <div class="names">
+                *<form action="/search" method="GET">
+                    <input type="search" name="query" placeholder="First Name" required>
+                  </form>
+                  <form action="/search" method="GET">
+                  <input type="search" name="query" placeholder="Middle Name" required>
+                </form>
+                *<form action="/search" method="GET">
+                    <input type="search" name="query" placeholder="Last Name" required>
+                  </form>
+            </div>
+            </feildset>
             <p>
-                <lable for="name"><span>Name: </span>
+                <lable for="name"><span>Email: </span>
                     <strong><abbr title="required">*</abbr></strong>
                 </lable>
                 <input type="text" id="name" name="username">
             </p>
             <p>
-                <lable for="mail"><span>Email: </span>
+                <lable for="mail"><span>Number: </span>
                     <strong><abbr title="required">*</abbr></strong>
                 </lable>
                 <input type="email" id="mail" name="usermail">
             </p>
             <p>
-                <lable for="pwd"><span>Pasword: </span>
+                <lable for="pwd"><span>Address: </span>
                     <strong><abbr title="required">*</abbr></strong>
                 </lable>
                 <input type="password" id="name" name="password">
