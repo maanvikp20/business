@@ -94,6 +94,16 @@ button:hover {
   font-size: x-large;
 }
 
+.contact-main{
+  display: block;
+  text-align: center;
+  background-image: url("images/carimg17.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 20px;
+}
+
 .service-display{
   display: block;
   padding: 20px;

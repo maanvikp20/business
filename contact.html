@@ -25,8 +25,9 @@
       </form>
     </div>
   </nav>
+  <main class="contact-main">
     <form action="#">
-        <h1>Payment Form</h1>
+        <h1>Service Form</h1>
         <p>Required Fields are Followed by <strong><abbr title='Required'>*</abbr></strong></p>
 
         <section>
@@ -37,13 +38,16 @@
                 *<form action="/search" method="GET">
                     <input type="search" name="query" placeholder="First Name" required>
                   </form>
+                  <br>
                   <form action="/search" method="GET">
                   <input type="search" name="query" placeholder="Middle Name" required>
                 </form>
+                
                 *<form action="/search" method="GET">
                     <input type="search" name="query" placeholder="Last Name" required>
                   </form>
             </div>
+        </section>  
             </feildset>
             <p>
                 <lable for="name"><span>Email: </span>
@@ -51,6 +55,7 @@
                 </lable>
                 <input type="text" id="name" name="username">
             </p>
+            
             <p>
                 <lable for="mail"><span>Number: </span>
                     <strong><abbr title="required">*</abbr></strong>
@@ -63,43 +68,71 @@
                 </lable>
                 <input type="password" id="name" name="password">
             </p>
-        </section>
+        
         <section>
-            <h2>Payment information</h2>
+            <h2>Service information</h2>
             <p>
                 <lable for="card">
-                    <span>Card Type:</span>
+                    <span>Service Selection:</span>*
                 </lable>
                 <select id="card" name="usercard">
-                    <option value="visa">Visa</option>
-                    <option value="mc">MC</option>
-                    <option value="paypal">PayPal</option>
-                    <option value="amex">Amex</option>
-                    <option value="capone">Captital One</option>
+                    <option value="visa">Select</option>
+                    <option value="visa">Diagnostics</option>
+                    <option value="mc">Engine Repair & Maintenance</option>
+                    <option value="paypal">Break Services</option>
+                    <option value="amex">Transmition Services</option>
+                    <option value="capone">Suspention & Steering Repairs</option>
+                    <option value="capone">Exaust System Repair</option>
                 </select>
             </p>
             <p>
                 <lable for="number">
-                    <span>Card Number:</span>
+                    <span>Desribe the Issue(s):</span>
                     <strong><abbr title="required">*</abbr></strong>
                 </lable>
                 <input type="tel" name="cardnumber" id="number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
             </p>
             <p>
                 <lable for="date">
-                    <span>Experation Date:</span>
-                    <strong><abbr title="required">*</abbr></strong>
-                    <em>formatted as mm/dd/yy</em>
+                    <form action="/action_page.php">
+                        <p>Image Upload (About Problem):</p>
+                        <input type="file" id="myFile" name="filename">
+                        <input type="submit">
+                      </form>
+                      
                 </lable>
-                <input type="date" name="experation" id="date">
+           
             </p>
         </section>
         <section>
             <p>
-                <button type="submit">Validate the Payment</button>
+                <button type="submit">Submit</button>
             </p>
         </section>
     </form>
+</main>
+    <footer>
+        <div class="footer-container">
+          <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p>Email: info@rpmrepairs.com</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Address: 123 Main St, Your City, State, Zip</p>
+          </div>
+          <div class="footer-section">
+            <h3>Follow Us</h3>
+            <ul class="social-links">
+              <li><a href="#" target="_blank">Facebook</a></li>
+              <li><a href="#" target="_blank">Twitter</a></li>
+              <li><a href="#" target="_blank">Instagram</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>About Us</h3>
+            <p>At RPM Repairs, we are dedicated to providing high-quality automotive repair services. Our experienced technicians are here to help.</p>
+          </div>
+        </div>
+    </footer>
 
     
 </body>
